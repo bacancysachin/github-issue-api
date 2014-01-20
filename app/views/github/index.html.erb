@@ -1,0 +1,56 @@
+<div>
+	<table>
+		<thead>
+			<tr>
+				<th><p>Backlog</p></th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @open_issues.each do |issue| %>
+				<tr>
+					<td><%= issue.title%></td>
+				</tr>		
+			<% end %>
+		</tbody>
+	</table>
+</div>
+
+<div>
+	<table>
+		<thead>
+			<tr>
+				<th><p>In progress</p></th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @in_progress.each do |issue| %>
+			<tr>
+				<td><%= issue.title %></td>
+			</tr>
+		<% end %>
+		</tbody>
+	</table>
+</div>
+
+
+<div>
+	<table>
+		<thead>
+			<tr>
+				<th><p>Done</p></th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @closed_issues.each do |issue| %>
+			<tr>
+				<td><%= issue.title %></td>
+			</tr>
+		<% end %>
+		</tbody>
+	</table>
+</div>
+
+
+
+
+
